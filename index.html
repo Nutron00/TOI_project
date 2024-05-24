@@ -13,8 +13,6 @@
         }
         header {
             text-align: center;
-            min-width: 1600px;
-            height: 300px;
             background-color: #004080;
             color: white;
             padding: 10px 0;
@@ -34,7 +32,7 @@
         }
         main {
             margin: 0 auto;
-            min-width: 1600px;
+            max-width: 1500px;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
@@ -48,6 +46,8 @@
         .intro img {
             margin-left: 20px;
             border-radius: 8px;
+            max-width: 40%;
+            height: auto;
         }
         ul {
             list-style-type: none;
@@ -65,16 +65,20 @@
             text-decoration: none;
         }
         .fixed-section {
-            
-            top: 0px; /* Adjust based on your header height */
+            position: fixed;
+            top: 100px; /* Adjust based on your header height */
             left: 0;
-            width: 1600px;
-            height:200px;
+            width: 200px;
             padding: 20px;
-            background-color: #2a84e3;
-            border: 1px solid #e2e7e4;
+            background-color: #fff;
+            border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -102,14 +106,14 @@
     <main>
         <section class="intro">
             <div>
-                <p>Welcome to our page! Here, we delve into the analysis of news articles from the Times of India. In this demonstration, we'll guide you through the intricate process of extracting dates, cleaning data, and performing comprehensive data analysis. Dive in with us as we uncover the methodologies behind these essential tasks. Let's explore together how to effectively analyze news data for valuable insights.</p>
+                <h3>Welcome to our page! Here, we delve into the analysis of news articles from the Times of India. In this demonstration, we'll guide you through the intricate process of extracting dates, cleaning data, and performing comprehensive data analysis. Dive in with us as we uncover the methodologies behind these essential tasks. Let's explore together how to effectively analyze news data for valuable insights.</h3>
             </div>
-            <img src="images/Trend_image.jpg" alt="Trend Image" height="200" width="350">
+            <img src="images/Trend_image.jpg" alt="Trend Image">
         </section>
 
-        <section>
+        <section class="content">
             <h2>Dashboard PowerBI</h2>
-            <iframe title="TOI Project" width="1600" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjYTYzZTEtZjgwZC00NGRhLWE3ZjUtMTdiN2Y3MjcyOWI4IiwidCI6ImM1ODhlYWI0LWUxNWUtNDlmMi05ZDI2LWU3NDZmZTU0ZjdjZSJ9" frameborder="0" allowfullscreen="true"></iframe>
+            <iframe title="TOI Project" width="100%" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjYTYzZTEtZjgwZC00NGRhLWE3ZjUtMTdiN2Y3MjcyOWI4IiwidCI6ImM1ODhlYWI0LWUxNWUtNDlmMi05ZDI2LWU3NDZmZTU0ZjdjZSJ9" frameborder="0" allowfullscreen="true"></iframe>
             <h3>Insights:</h3>
             <ul>
                 <li>Murder cases constitute 14% of all crimes, and an increase was observed in both 2022 and 2023.</li>
