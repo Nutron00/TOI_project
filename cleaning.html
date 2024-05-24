@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOI Analysis - Data Cleaning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Cleaning</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Introduction</h3>
+            <p>Data cleaning is the most crucial part of the analysis step. If not done correctly, it could ruin the whole analysis.</p>
+            <ul>
+                <li>We will now clean the data we have extracted previously. For data cleaning, we first import the basic libraries and read the CSV file.</li>
+                <img src="images/dataCleaning/image1.png" alt="Import Libraries and Read CSV">
+
+                <li>We will remove the rows that do not contain the word "city" in them, as we only want to extract city news.</li>
+                <img src="images/dataCleaning/image2.png" alt="Remove Non-City Rows">
+
+                <li>Removing the 'city' word from cities and filtering based on the length of city names.</li>
+                <img src="images/dataCleaning/image3.png" alt="Filter City Names">
+
+                <li>Extracting 'date', 'time', and 'year' from the data.</li>
+                <img src="images/dataCleaning/image4.png" alt="Extract Date, Time, Year">
+
+                <li>Labeling the crime.</li>
+                <img src="images/dataCleaning/image5.png" alt="Label Crimes">
+
+                <li>After applying the custom function, we will get the following data.</li>
+                <img src="images/dataCleaning/image6.png" alt="Cleaned Data">
+
+                <li>Removing rows where there is no crime and also dropping the duplicates.</li>
+                <img src="images/dataCleaning/image7.png" alt="Remove No-Crime Rows and Duplicates">
+                <img src="images/dataCleaning/image8.png" alt="Final Data">
+
+                <li>Now the last step is to convert the clean data into a CSV file and save it for the visualization part.</li>
+                <img src="images/dataCleaning/image9.png" alt="Save Clean Data to CSV">
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

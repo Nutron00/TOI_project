@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding the Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 1800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding The Data</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Introduction</h3>
+            <p>We'll start by visiting the Times of India website to identify what information we can extract and how it could be beneficial for our analysis.</p>
+            <img src="images/dataUnderstanding/website_pic1.png" alt="Times of India Website" height="500" width="750">
+        </section>
+
+        <section>
+            <p>In this page, we observe nearly 600,000 articles. Our plan is to extract all of these articles, alongside the crucial date and time information. This metric holds significance as we delve into analyzing the crime rates of cities over the past years. Through our preliminary investigation, we've discovered a pattern: articles related to city news consistently feature the city name preceding the date field.</p>
+            <p>Additionally, we'll extract the content of the news articles to gain a comprehensive understanding of the news topics and events they cover.</p>
+            <img src="images/dataUnderstanding/inspect_city.png" alt="Inspect City" height="250" width="1100">
+        </section>
+
+        <section>
+            <h3>Insights</h3>
+            <ul>
+                <li>In the webpage's inspect mode, it's evident that the link includes the city name appended after a certain pattern. Our next step involves extracting this city name from the link. Additionally, we proceed by determining the type of crime committed by analyzing the paragraph.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOI Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            padding-left: 250px; /* Space for the fixed section */
+        }
+        header {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        header button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        header button:hover {
+            background-color: #005bb5;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 1800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .intro img {
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(16, 60, 103);
+        }
+        a:hover {
+            background-color: #b9c1c8;
+            text-decoration: none;
+        }
+        .fixed-section {
+            position: fixed;
+            top: 0px; /* Adjust based on your header height */
+            right: 0;
+            width: 160px;
+            height:400px;
+            padding: 20px;
+            background-color: #2a84e3;
+            border: 1px solid #e2e7e4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Times of India News Analysis</h1>
+        <button onclick="window.location.href='about.html'">About</button>
+        <button onclick="window.location.href='info.html'">Info</button>
+        <button onclick="window.location.href='#help'">Help</button>
+    </header>
+
+    <div class="fixed-section">
+        <section class="links">
+            <h2>Complete Demonstration</h2>
+            <h3>Steps Involved:</h3>
+            <ul>
+                <li><a href="/TOI_project/understanding.html">Understanding The Data</a></li>
+                <li><a href="/TOI_project/Extraction.html">Data Extraction</a></li>
+                <li><a href="/TOI_project/cleaning.html">Data Cleaning</a></li>
+                <li><a href="/TOI_project/visualization.html">Creating Visualization in PowerBI</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <main>
+        <section class="intro">
+            <div>
+                <h3>Welcome to our page! Here, we delve into the analysis of news articles from the Times of India. In this demonstration, we'll guide you through the intricate process of extracting dates, cleaning data, and performing comprehensive data analysis. Dive in with us as we uncover the methodologies behind these essential tasks. Let's explore together how to effectively analyze news data for valuable insights.</h3>
+            </div>
+            <img src="images/Trend_image.jpg" alt="Trend Image" height="200" width="350">
+        </section>
+
+        <section>
+            <h2>Dashboard PowerBI</h2>
+            <iframe title="TOI Project" width="1600" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjYTYzZTEtZjgwZC00NGRhLWE3ZjUtMTdiN2Y3MjcyOWI4IiwidCI6ImM1ODhlYWI0LWUxNWUtNDlmMi05ZDI2LWU3NDZmZTU0ZjdjZSJ9" frameborder="0" allowfullscreen="true"></iframe>
+            <h3>Insights:</h3>
+            <ul>
+                <li>Murder cases constitute 14% of all crimes, and an increase was observed in both 2022 and 2023.</li>
+                <li>This has been recorded that most of the crimes have happened in January and December.</li>
+                <li>Delhi and Mumbai have the highest crime rates and most of the cases are from these places.</li>
+                <li>Crime trended up, resulting in a 168.32% increase between 2001 and 2024.</li>
+                <li>Crime jumped from 1,382 to 3,251 during its steepest incline between 2010 and 2013.</li>
+                <li>Crime started trending up in 2014, rising by 108.38% (2,884) in 9 years.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
