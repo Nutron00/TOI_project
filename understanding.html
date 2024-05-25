@@ -37,6 +37,17 @@
         li {
             margin-bottom: 10px;
         }
+        .fixed-section {
+            position: fixed;
+            top: 100px; /* Adjust based on your header height */
+            right: 0;
+            width: 130px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +73,17 @@
             <ul>
                 <li>In the webpage's inspect mode, it's evident that the link includes the city name appended after a certain pattern. Our next step involves extracting this city name from the link. Additionally, we proceed by determining the type of crime committed by analyzing the paragraph.</li>
             </ul>
+        </section>
+        <div class="fixed-section">
+            <section class="links">
+                <h2></h2>
+                <h3>Steps Involved:</h3>
+                <ul>
+                    <li><a href="/TOI_project/understanding.html">Understanding The Data</a></li>
+                    <li><a href="/TOI_project/Extraction.html">Data Extraction</a></li>
+                    <li><a href="/TOI_project/cleaning.html">Data Cleaning</a></li>
+                    <li><a href="/TOI_project/visualization.html">Creating Visualization in PowerBI</a></li>
+                </ul>
         </section>
     </main>
 </body>

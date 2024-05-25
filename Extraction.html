@@ -1,41 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>TOI_ANALYSIS</title>
-    </head>
-<header>
-    <h1>Data Extraction</h1>
-
-</header>
-
-
+<head>
+    <meta charset="UTF-8">
+    <title>TOI Analysis - Data Extraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+        .fixed-section {
+            position: fixed;
+            top: 100px; /* Adjust based on your header height */
+            right: 0;
+            width: 130px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
 <body>
-<div>
-    <h3 id="DataExtraction"></h3>
-    <p>Now when we have understood the data we will focus on extracting it.
-    </p>
-    <ul>
-        <li>We will first import the basic libraries.</li>
-        <image src="images/dataExtraction/import1.png"></image>
-        <li>Now we will use the request library to extract the webpage
-            and soup library to read that webpage.</li>
-        <image src="images/dataExtraction/import2.png"></image>
-        <li>Every paragraph has same class tag so we will contain those into a 
-            variable and find the required data from there. I will now provide the 
-            full code. 
-        </li>
-        <image src="images/dataExtraction/import3.png"></image>
-        <li>In the above code we created three variables datetime,city and description
-            and created a dataframe using pandas library. The range of the page is upto 22400 I ran it from 0.
-        </li>
-        <li>This dataframe (df1) will be added to the previous dataframe that I created with range less than the shown.
-            Hence we will get the below dataframe.
-        </li>
-        <image src="images/dataExtraction/import4.png"></image>
-        <li>Now we will save this data into a csv file and the next part is data cleaning.</li>
-        <image src="images/dataExtraction/import5.png"></image>
-    </ul>
+    <header>
+        <h1>Data Extraction</h1>
+    </header>
 
-</div>
+    <main>
+        <section>
+            <h3 id="DataExtraction">Introduction</h3>
+            <p>Now that we have understood the data, we will focus on extracting it.</p>
+            <ul>
+                <li>We will first import the basic libraries.</li>
+                <img src="images/dataExtraction/import1.png" alt="Import Libraries">
+                
+                <li>Next, we will use the request library to extract the webpage and the BeautifulSoup library to read that webpage.</li>
+                <img src="images/dataExtraction/import2.png" alt="Extract and Read Webpage">
+                
+                <li>Every paragraph has the same class tag, so we will contain those in a variable and find the required data from there. Here is the full code.</li>
+                <img src="images/dataExtraction/import3.png" alt="Full Code Example">
+                
+                <li>In the above code, we created three variables: datetime, city, and description, and created a dataframe using the pandas library. The range of the page is up to 22,400. I ran it from 0.</li>
+                
+                <li>This dataframe (df1) will be added to the previous dataframe that I created with a range less than shown. Hence, we will get the below dataframe.</li>
+                <img src="images/dataExtraction/import4.png" alt="DataFrame Example">
+                
+                <li>Now we will save this data into a CSV file. The next part is data cleaning.</li>
+                <img src="images/dataExtraction/import5.png" alt="Save Data to CSV">
+            </ul>
+        </section>
+        <div class="fixed-section">
+            <section class="links">
+                <h2></h2>
+                <h3>Steps Involved:</h3>
+                <ul>
+                    <li><a href="/TOI_project/understanding.html">Understanding The Data</a></li>
+                    <li><a href="/TOI_project/Extraction.html">Data Extraction</a></li>
+                    <li><a href="/TOI_project/cleaning.html">Data Cleaning</a></li>
+                    <li><a href="/TOI_project/visualization.html">Creating Visualization in PowerBI</a></li>
+                </ul>
+        </section>
+    </main>
 </body>
+</html>
